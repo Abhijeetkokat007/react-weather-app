@@ -89,12 +89,22 @@ function App() {
         {/* <p id='not-found'> ????????</p> */}
 
         <div className="d-flex">
+          <div className="conainer-flex">
           <p className="city-name"> {weatherData?.name}</p>
-          <img src={wicon} alt="asd" />
+          <span> City </span>
+          </div>
+
+         <div className="conainer-flex">
+         <img src={wicon} alt="asd" />
+         </div>
+
+          <div className="conainer-flex">
           <p className="temp">
             {" "}
             {(weatherData?.main?.temp - 273).toFixed(2)} °C
           </p>
+          <span className="m-top">Temprature</span>
+          </div>
         </div>
 
         <div className="d-flex">
